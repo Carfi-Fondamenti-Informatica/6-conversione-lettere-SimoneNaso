@@ -4,14 +4,12 @@
 using namespace std;
 
 int main () {
-    char c=0;
-    cin >> c;
-    if ((c>='a' && c<='z') or (c>='A' && c<='Z')) {
-        cout << "vero" << endl;
-        cout << conversione (c) << endl;
-    } else {
-        cout << "falso" << endl;
+    char input;
+    cin >> input;
+    if (conversione(input)==false) {
         cout << "errore" << endl;
+    } else {
+        cout << "input" << endl
     }
     return 0;
 }
