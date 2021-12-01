@@ -1,2 +1,2 @@
 
-char conversione (char);
+bool conversione (char &a);
