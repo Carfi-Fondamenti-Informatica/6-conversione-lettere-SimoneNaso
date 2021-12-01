@@ -9,7 +9,7 @@ int main () {
     if (conversione(input)==false) {
         cout << "errore" << endl;
     } else {
-        cout << "input" << endl
+        cout << input << endl;
     }
     return 0;
 }
