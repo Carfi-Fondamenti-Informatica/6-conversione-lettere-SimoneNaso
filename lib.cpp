@@ -3,13 +3,13 @@
 #include "lib.h"
 using namespace std;
 
-char conversione (char z) {
-    char ris;
-    if (z>='a' && z<='z') {
-            ris = z-32;
-        } else if (z>='A' && z<='Z') {
-            ris = z+32;
-        } else {
-    }
-    return ris;
+bool conversione (char &a) {
+    if (a>='a' && a<='z') {
+            a = a-32;
+            return true;
+        } else if (a>='A' && a<='Z') {
+            a = a+32;
+            return true;
+        } 
+        return false;
 }
